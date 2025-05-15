@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Dados para os cards de Habilidades/Estudos
     const skillsData = [
         // Frontend
-        { icon: 'fab fa-html5', title: 'HTML5 e CSS3', category: 'Frontend', status: 'Concluído' },
-        { icon: 'fas fa-palette', title: 'Responsividade com CSS3', category: 'Frontend', status: 'Estudando' },
+        { icon: 'fab fa-html5', title: 'HTML5 e CSS3', category: 'Frontend', status: 'Estudando' },
+        { icon: 'fas fa-palette', title: 'Responsividade com CSS3', category: 'Frontend', status: 'A Estudar' },
         { icon: 'fab fa-js-square', title: 'Javascript para sites', category: 'Frontend', status: 'A Estudar' },
         { icon: 'fas fa-exchange-alt', title: 'Requisições HTTP com Javascript', category: 'Frontend', status: 'A Estudar' },
         { icon: 'fab fa-react', title: 'Aprender React', category: 'Frontend', status: 'A Estudar' },

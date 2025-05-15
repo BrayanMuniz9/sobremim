@@ -6,14 +6,14 @@
 }
 
 html {
-    scroll-behavior: smooth; /* Rolagem suave ao clicar nos links do navbar */
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    color: #2C3E50; /* Azul Marinho para texto principal */
+    background-color: #f8f9fa; /* Um cinza muito claro, quase branco */
 }
 
 .container {
@@ -25,14 +25,14 @@ body {
 
 /* Navbar */
 .navbar {
-    background: #333;
-    color: #fff;
+    background: #2C3E50; /* Azul Marinho */
+    color: #fff; /* Branco para texto */
     padding: 1rem 2rem;
-    position: fixed; /* Flutuante */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Para ficar sobre outros elementos */
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,6 +42,7 @@ body {
 .nav-logo {
     font-size: 1.5rem;
     font-weight: bold;
+    color: #C8A96A; /* Dourado Suave para o logo */
 }
 
 .nav-links {
@@ -54,38 +55,38 @@ body {
 }
 
 .nav-links a {
-    color: #fff;
+    color: #fff; /* Branco para links */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #00aaff; /* Cor de destaque ao passar o mouse */
+    color: #C8A96A; /* Dourado Suave no hover */
 }
 
 /* Seções */
 .section {
-    padding: 80px 0; /* Padding para não ficar embaixo do navbar */
-    min-height: 80vh; /* Altura mínima para cada seção */
+    padding: 80px 0;
+    min-height: 80vh;
 }
 
-.section:nth-child(odd) { /* Alternar cores de fundo para distinção */
-    background-color: #fff;
+.section:nth-child(odd) {
+    background-color: #fff; /* Branco */
 }
 .section:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #f0f2f5; /* Um cinza um pouco mais escuro que o body, para alternar */
 }
 
 .section h2 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 2.5rem;
-    color: #333;
+    color: #2C3E50; /* Azul Marinho para títulos de seção */
 }
 
 /* Seção Sobre Mim */
 #sobre {
-    padding-top: 100px; /* Mais espaço para o primeiro item por causa do navbar */
+    padding-top: 100px;
 }
 
 .sobre-mim-container {
@@ -95,20 +96,21 @@ body {
 }
 
 .info-pessoal {
-    flex: 2; /* Ocupa 2/3 do espaço */
+    flex: 2;
 }
 
 .info-pessoal h1 {
     margin-bottom: 10px;
-    color: #0077b5; /* Cor similar ao LinkedIn */
+    color: #C8A96A; /* Dourado Suave para o nome principal */
 }
 .info-pessoal h2 {
     font-size: 1.5rem;
     margin-top: 20px;
     margin-bottom: 10px;
-    border-bottom: 2px solid #00aaff;
+    border-bottom: 2px solid #C8A96A; /* Dourado Suave para a borda */
     padding-bottom: 5px;
-    text-align: left; /* Alinha subtítulos à esquerda */
+    text-align: left;
+    color: #2C3E50; /* Azul Marinho para subtítulos */
 }
 .info-pessoal ul {
     list-style: disc;
@@ -116,7 +118,7 @@ body {
 }
 
 .foto-e-social {
-    flex: 1; /* Ocupa 1/3 do espaço */
+    flex: 1;
     text-align: center;
 }
 
@@ -125,23 +127,19 @@ body {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #00aaff;
+    border: 5px solid #C8A96A; /* Dourado Suave para a borda da foto */
     margin-bottom: 20px;
 }
 
 .social-icons a {
     font-size: 2rem;
-    color: #333;
+    color: #2C3E50; /* Azul Marinho para ícones sociais */
     margin: 0 10px;
     transition: color 0.3s ease;
 }
-.social-icons a:hover .fa-linkedin {
-    color: #0077b5;
+.social-icons a:hover {
+    color: #C8A96A; /* Dourado Suave no hover */
 }
-.social-icons a:hover .fa-github {
-    color: #171515;
-}
-
 
 /* Seção Minha Jornada (Timeline) */
 .timeline {
@@ -150,21 +148,21 @@ body {
     position: relative;
 }
 
-.timeline::before { /* Linha central da timeline */
+.timeline::before {
     content: '';
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 40px; /* Ajuste conforme o tamanho do ícone */
+    left: 40px;
     width: 4px;
-    background: #00aaff;
-    margin-left: -2px; /* Metade da largura para centralizar */
+    background: #C8A96A; /* Dourado Suave para a linha da timeline */
+    margin-left: -2px;
 }
 
 .timeline-item {
     margin-bottom: 50px;
     position: relative;
-    padding-left: 80px; /* Espaço para o ícone e linha */
+    padding-left: 80px;
 }
 
 .timeline-item:last-child {
@@ -173,10 +171,10 @@ body {
 
 .timeline-icon {
     position: absolute;
-    left: 15px; /* Ajuste para centralizar com a linha */
+    left: 15px;
     top: 0;
-    background: #00aaff;
-    color: white;
+    background: #C8A96A; /* Dourado Suave */
+    color: #fff; /* Branco para o ícone dentro */
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -184,78 +182,79 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    z-index: 10; /* Para ficar sobre a linha */
-    border: 3px solid white; /* Borda para destacar */
+    z-index: 10;
+    border: 3px solid #fff; /* Borda branca para destacar do fundo da seção */
 }
 
 .timeline-content {
     background: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    position: relative; /* Para a seta */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08); /* Sombra mais suave */
+    position: relative;
 }
 
-.timeline-content::before { /* Seta apontando para a timeline */
+.timeline-content::before {
     content: '';
     position: absolute;
     top: 15px;
-    left: -15px; /* Aponta para a esquerda */
+    left: -15px;
     width: 0;
     height: 0;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-right: 15px solid white; /* Cor de fundo do content */
+    border-right: 15px solid white;
 }
 
 .timeline-content h3 {
     margin-top: 0;
-    color: #0077b5;
+    color: #2C3E50; /* Azul Marinho para títulos na timeline */
 }
 
 /* Seção Habilidades e Projetos (Cards) */
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 4 por linha em telas grandes */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
 .card {
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.1); /* Sombra com tom azulado sutil */
     padding: 20px;
     text-align: center;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e0e0e0; /* Borda sutil para os cards */
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(44, 62, 80, 0.15);
 }
 
-.card .card-icon { /* Ícone da habilidade */
+.card .card-icon {
     font-size: 3rem;
-    color: #00aaff;
+    color: #C8A96A; /* Dourado Suave para ícones dos cards */
     margin-bottom: 15px;
 }
 
 .card-title {
     font-size: 1.2rem;
     margin-bottom: 10px;
-    color: #333;
+    color: #2C3E50; /* Azul Marinho para títulos dos cards */
 }
 
 .card-category {
     font-size: 0.9rem;
-    color: #777;
+    color: #555; /* Um cinza mais escuro para a categoria */
     margin-bottom: 15px;
     font-style: italic;
 }
 
 .card-details {
-    display: none; /* Escondido por padrão */
+    display: none;
     margin-top: 15px;
     padding-top: 15px;
     border-top: 1px solid #eee;
@@ -264,7 +263,7 @@ body {
 
 .card-details p, .card-details .status {
     font-size: 0.95rem;
-    color: #555;
+    color: #2C3E50; /* Azul Marinho para texto nos detalhes */
 }
 
 .card-details .status {
@@ -272,9 +271,10 @@ body {
     margin-top: 10px;
     display: block;
     text-align: center;
+    color: #C8A96A; /* Dourado para o status */
 }
 
-.card.open .card-details { /* Mostrar detalhes quando o card estiver aberto */
+.card.open .card-details {
     display: block;
 }
 
@@ -287,14 +287,10 @@ body {
     margin-bottom: 15px;
 }
 
-/* .project-card .card-header {
-}
-Para caso queira alinhar algo ao lado do título no futuro */
-
 .project-card .project-link {
     display: inline-block;
     margin-top: 15px;
-    color: #0077b5;
+    color: #C8A96A; /* Dourado Suave para links de projeto */
     text-decoration: none;
     font-weight: bold;
 }
@@ -310,8 +306,8 @@ Para caso queira alinhar algo ao lado do título no futuro */
 footer {
     text-align: center;
     padding: 20px;
-    background: #333;
-    color: #fff;
+    background: #2C3E50; /* Azul Marinho */
+    color: #f0f2f5; /* Um cinza claro para o texto do footer */
     margin-top: 40px;
 }
 
@@ -339,21 +335,21 @@ footer {
     .info-pessoal, .foto-e-social {
         flex: none;
         width: 100%;
-        text-align: center; /* Centralizar texto no mobile */
+        text-align: center;
     }
     .info-pessoal h1, .info-pessoal h2 {
         text-align: center;
     }
     .info-pessoal ul {
         padding-left: 0;
-        list-style-position: inside; /* Para melhor visualização centralizada */
+        list-style-position: inside;
     }
     .foto-e-social {
         margin-top: 30px;
     }
 
     .timeline::before {
-        left: 20px; /* Ajuste para telas menores */
+        left: 20px;
     }
     .timeline-item {
         padding-left: 60px;
@@ -366,7 +362,7 @@ footer {
     }
 
     .cards-container {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 1 ou 2 colunas */
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
     .section h2 {
         font-size: 2rem;
@@ -378,6 +374,6 @@ footer {
         font-size: 0.9rem;
     }
     .cards-container {
-        grid-template-columns: 1fr; /* 1 coluna */
+        grid-template-columns: 1fr;
     }
 }
